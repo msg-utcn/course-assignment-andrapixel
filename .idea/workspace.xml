@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ff18f66-668f-4d8c-a6e0-3817c219b537" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/app.module.ts.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-payload.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-token.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/jwt-auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/local-auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/strategies/jwt.strategy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/strategies/local.strategy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-question.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/update-question.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/question.mapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.config.ts.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/login-user.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/register-user.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/user.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/mappers/users.mapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/model/user-role.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/model/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/main.ts.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json.orig" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="week-4-assignment" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OL9zy8k25OmrWsTbsNRctl1ZpG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alexandra/Projects/IntelliJ/SD/Assignment2/hotel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/alexandra/Projects/msg_project/course-content/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/311/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ff18f66-668f-4d8c-a6e0-3817c219b537" name="Changes" comment="" />
+      <created>1681329260315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681329260315</updated>
+      <workItem from="1681329261704" duration="31000" />
+      <workItem from="1681329309533" duration="1571000" />
+      <workItem from="1681384499627" duration="39000" />
+      <workItem from="1681392880286" duration="80000" />
+      <workItem from="1681892558983" duration="32000" />
+      <workItem from="1681892598799" duration="4488000" />
+      <workItem from="1681915240096" duration="5830000" />
+      <workItem from="1681969553718" duration="4532000" />
+      <workItem from="1681996252410" duration="4589000" />
+      <workItem from="1682159978121" duration="479000" />
+      <workItem from="1682327902278" duration="1784000" />
+      <workItem from="1682493063287" duration="5568000" />
+      <workItem from="1682546000582" duration="1494000" />
+      <workItem from="1682547677511" duration="6221000" />
+      <workItem from="1682555318739" duration="1014000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
