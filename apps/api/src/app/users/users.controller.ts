@@ -6,8 +6,8 @@ import {UserDto} from "./dto/user.dto";
 import {RegisterUserDto} from "./dto/register-user.dto";
 import {JwtAuthGuard} from "../auth/guards/jwt-auth.guard";
 
-// @ApiBearerAuth()
-// @UseGuards(JwtAuthGuard)
+//@ApiBearerAuth()
+//@UseGuards(JwtAuthGuard)
 @ApiTags(UsersConfig.SWAGGER_FEATURE)
 @Controller(UsersConfig.API_ROUTE)
 export class UsersController {

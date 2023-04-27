@@ -4,50 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ff18f66-668f-4d8c-a6e0-3817c219b537" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/app.module.ts.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-payload.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-token.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/jwt-auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/local-auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/strategies/jwt.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/strategies/local.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-question.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/update-question.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/question.mapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.config.ts.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/login-user.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/register-user.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/user.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/mappers/users.mapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/model/user-role.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/model/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/main.ts.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json.orig" afterDir="false" />
+    <list default="true" id="6ff18f66-668f-4d8c-a6e0-3817c219b537" name="Changes" comment="???">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +28,24 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="92142f78-6931-41fc-bed6-748155da45ee" />
+        <option name="url" value="https://github.com/msg-utcn/course-assignment-andrapixel.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2OL9zy8k25OmrWsTbsNRctl1ZpG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,8 +98,16 @@
       <workItem from="1682493063287" duration="5568000" />
       <workItem from="1682546000582" duration="1494000" />
       <workItem from="1682547677511" duration="6221000" />
-      <workItem from="1682555318739" duration="1014000" />
+      <workItem from="1682555318739" duration="2444000" />
     </task>
+    <task id="LOCAL-00001" summary="???">
+      <created>1682556631381</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682556631381</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,5 +123,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="???" />
+    <option name="LAST_COMMIT_MESSAGE" value="???" />
   </component>
 </project>
