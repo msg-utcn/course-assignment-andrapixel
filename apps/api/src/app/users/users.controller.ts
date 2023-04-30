@@ -1,19 +1,16 @@
-import {ApiBearerAuth, ApiTags} from "@nestjs/swagger";
-import {Body, Controller, Delete, Get, Param, Patch, Post, Put, UseGuards} from "@nestjs/common";
-import {UsersConfig} from "./users.config";
-import {UsersService} from "./users.service";
-import {UserDto} from "./dto/user.dto";
-import {RegisterUserDto} from "./dto/register-user.dto";
-import {JwtAuthGuard} from "../auth/guards/jwt-auth.guard";
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { Controller, Delete, Get, Param, UseGuards } from '@nestjs/common';
+import { UsersConfig } from './users.config';
+import { UsersService } from './users.service';
+import { UserDto } from './dto/user.dto';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 
-//@ApiBearerAuth()
-//@UseGuards(JwtAuthGuard)
+@ApiBearerAuth()
+@UseGuards(JwtAuthGuard)
 @ApiTags(UsersConfig.SWAGGER_FEATURE)
 @Controller(UsersConfig.API_ROUTE)
 export class UsersController {
-  constructor(
-    private usersService: UsersService
-  ) {}
+  constructor(private usersService: UsersService) {}
 
   @Get()
   async getUsers(): Promise<UserDto[]> {
@@ -30,7 +27,7 @@ export class UsersController {
     return this.usersService.getUserByEmail(email);
   }
 
-  @Delete(":id")
+  @Delete(':id')
   async deleteUserById(@Param('id') id: string): Promise<boolean> {
     return this.usersService.deleteAll(id);
   }

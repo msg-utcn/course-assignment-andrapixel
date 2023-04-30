@@ -1,14 +1,13 @@
 import { Module } from '@nestjs/common';
 import { QuestionManagementModule } from './question-management/question-management.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import {ConfigModule, ConfigService} from "@nestjs/config";
-import {config} from "rxjs";
-import {UsersModule} from "./users/users.module";
-import {AuthModule} from "./auth/auth.module";
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({isGlobal: true}),
+    ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRootAsync({
       useFactory: (configService: ConfigService) => ({
         type: 'postgres',

@@ -1,7 +1,7 @@
-import {RegisterUserDto} from "../dto/register-user.dto";
-import {UserModel} from "../model/user.model";
-import {UserDto} from "../dto/user.dto";
-import {UserRole} from "../model/user-role";
+import { RegisterUserDto } from '../dto/register-user.dto';
+import { UserModel } from '../model/user.model';
+import { UserDto } from '../dto/user.dto';
+import { UserRole } from '../model/user-role';
 
 export class UsersMapper {
   static mapCreateUserToModel(dto: RegisterUserDto): UserModel {
@@ -10,7 +10,7 @@ export class UsersMapper {
       roles.push(UserRole.ADMIN);
     }
 
-    return new UserModel( {
+    return new UserModel({
       id: undefined,
       name: dto.name,
       email: dto.email,
@@ -20,7 +20,7 @@ export class UsersMapper {
   }
 
   static mapUserToDto(model: UserModel): UserDto {
-    return new UserDto( {
+    return new UserDto({
       id: model.id,
       name: model.name,
       email: model.email,

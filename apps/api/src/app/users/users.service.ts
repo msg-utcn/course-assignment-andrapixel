@@ -1,12 +1,17 @@
-import {BadRequestException, Injectable, Logger, NotFoundException} from "@nestjs/common";
-import {InjectRepository} from "@nestjs/typeorm";
-import {Repository} from "typeorm";
-import {UserModel} from "./model/user.model";
-import {UserDto} from "./dto/user.dto";
-import {UsersMapper} from "./mappers/users.mapper";
-import {RegisterUserDto} from "./dto/register-user.dto";
+import {
+  BadRequestException,
+  Injectable,
+  Logger,
+  NotFoundException,
+} from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { UserModel } from './model/user.model';
+import { UserDto } from './dto/user.dto';
+import { UsersMapper } from './mappers/users.mapper';
+import { RegisterUserDto } from './dto/register-user.dto';
 import * as bcrypt from 'bcrypt';
-import {LoginUserDto} from "./dto/login-user.dto";
+import { LoginUserDto } from './dto/login-user.dto';
 
 @Injectable()
 export class UsersService {
@@ -49,7 +54,8 @@ export class UsersService {
     let hashedPassword = await bcrypt.hash(dto.password, 10);
     const dtoWithHashedPassword = {
       ...dto,
-      password: hashedPassword };
+      password: hashedPassword,
+    };
 
     //console.log(hashedPassword);
 
@@ -64,8 +70,8 @@ export class UsersService {
   }
 
   async checkCredentials(loginUserDto: LoginUserDto): Promise<boolean> {
-    const foundModel = await this.userModelRepository.findOneBy(
-      {email: loginUserDto.email,
+    const foundModel = await this.userModelRepository.findOneBy({
+      email: loginUserDto.email,
     });
 
     if (!foundModel) {
@@ -74,7 +80,8 @@ export class UsersService {
 
     return bcrypt.compare(loginUserDto.password, foundModel.password);
   }
-  async deleteAll(id:string):Promise<boolean>{
+
+  async deleteAll(id: string): Promise<boolean> {
     const deleteResult = await this.userModelRepository.delete({ id });
     if (deleteResult.affected === 0) {
       throw new BadRequestException();
