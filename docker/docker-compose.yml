@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  utcndb:
+    image: "postgres"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - utcndb-volume:/var/lib/postgresql/data
+      
+volumes:
+  utcndb-volume:

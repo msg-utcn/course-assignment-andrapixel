@@ -50,6 +50,6 @@
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
     "tslib": "^2.3.0",
-    "typeorm": "^0.3.13"
+    "typeorm": "^0.3.15"
   }
 }

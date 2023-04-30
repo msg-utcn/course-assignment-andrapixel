@@ -1,5 +1,6 @@
-import { QuestionTopic } from './question-topic';
+
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {QuestionTopic} from "./question-topic";
 
 @Entity()
 export class QuestionModel {

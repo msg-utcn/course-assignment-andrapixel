@@ -1,11 +1,11 @@
 import {Body, Controller, Delete, Get, Param, Patch, Post, UseGuards} from '@nestjs/common';
-import { QuestionDto } from './dtos/question.dto';
 import {QuestionService} from "./question.service";
 import {CreateQuestionDto} from "./dtos/create-question.dto";
 import {UpdateQuestionDto} from "./dtos/update-question.dto";
 import {QuestionManagementConfig} from "./question-management.config";
 import {ApiBearerAuth, ApiTags} from "@nestjs/swagger";
 import {JwtAuthGuard} from "../auth/guards/jwt-auth.guard";
+import {QuestionDto} from "./dtos/question.dto";
 
 @ApiBearerAuth()
 @UseGuards(JwtAuthGuard)

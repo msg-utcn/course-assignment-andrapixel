@@ -7,10 +7,10 @@ import {
 import { InjectRepository } from '@nestjs/typeorm';
 import { QuestionModel } from './model/question.model';
 import { Repository } from 'typeorm';
-import { QuestionDto } from './dtos/question.dto';
 import { QuestionMapper } from './mappers/question.mapper';
 import { CreateQuestionDto } from './dtos/create-question.dto';
 import { UpdateQuestionDto } from './dtos/update-question.dto';
+import {QuestionDto} from "./dtos/question.dto";
 
 @Injectable()
 export class QuestionService {
