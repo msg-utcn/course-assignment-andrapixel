@@ -21,9 +21,11 @@ export class QuestionService {
 
   async readAll(): Promise<QuestionDto[]> {
     const foundModels = await this.questionModelRepository.find();
+
     if (!foundModels) {
       return [];
     }
+
     return foundModels.map((model) => QuestionMapper.mapToDto(model));
   }
 
@@ -33,7 +35,8 @@ export class QuestionService {
   }
 
   async create(dto: CreateQuestionDto): Promise<QuestionDto> {
-    const model = QuestionMapper.mapCreateQuestionToModel(dto);
+    const model = QuestionMapper.mapCreateQuestionDtoToModel(dto);
+
     try {
       const savedModel = await this.questionModelRepository.save(model);
       return QuestionMapper.mapToDto(savedModel);
@@ -45,7 +48,7 @@ export class QuestionService {
 
   async update(id: string, dto: UpdateQuestionDto): Promise<QuestionDto> {
     const foundModel = await this.readModelById(id);
-    const updatedModel = QuestionMapper.mapUpdateQuestionToModel(
+    const updatedModel = QuestionMapper.mapUpdateQuestionDtoToModel(
       dto,
       foundModel
     );
@@ -61,6 +64,7 @@ export class QuestionService {
 
   async delete(id: string): Promise<void> {
     const deleteResult = await this.questionModelRepository.delete({ id });
+
     if (deleteResult.affected === 0) {
       throw new BadRequestException();
     }
@@ -70,9 +74,11 @@ export class QuestionService {
     const foundModel = await this.questionModelRepository.findOne({
       where: { id },
     });
+
     if (!foundModel) {
       throw new NotFoundException();
     }
+
     return foundModel;
   }
 }

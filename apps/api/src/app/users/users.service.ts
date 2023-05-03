@@ -22,32 +22,36 @@ export class UsersService {
 
   async getUsers(): Promise<UserDto[]> {
     const foundModels = await this.userModelRepository.find();
+
     if (!foundModels) {
       return [];
     }
-    return foundModels.map((model) => UsersMapper.mapUserToDto(model));
+
+    return foundModels.map((model) => UsersMapper.mapToDto(model));
   }
 
   async getUserById(id: string): Promise<UserDto> {
     const foundModel = await this.userModelRepository.findOne({
       where: { id },
     });
+
     if (!foundModel) {
       throw new NotFoundException();
     }
 
-    return UsersMapper.mapUserToDto(foundModel);
+    return UsersMapper.mapToDto(foundModel);
   }
 
   async getUserByEmail(email: string): Promise<UserDto> {
     const foundModel = await this.userModelRepository.findOne({
-      where: { email },
+      where: { email: String(email) },
     });
+
     if (!foundModel) {
       throw new NotFoundException();
     }
 
-    return UsersMapper.mapUserToDto(foundModel);
+    return UsersMapper.mapToDto(foundModel);
   }
 
   async registerUser(dto: RegisterUserDto): Promise<UserDto> {
@@ -56,13 +60,11 @@ export class UsersService {
       ...dto,
       password: hashedPassword,
     };
+    const model = UsersMapper.mapCreateUserDtoToModel(dtoWithHashedPassword);
 
-    //console.log(hashedPassword);
-
-    const model = UsersMapper.mapCreateUserToModel(dtoWithHashedPassword);
     try {
       const savedModel = await this.userModelRepository.save(model);
-      return UsersMapper.mapUserToDto(savedModel);
+      return UsersMapper.mapToDto(savedModel);
     } catch (error) {
       Logger.log(error, 'UsersService.registerUser');
       throw new BadRequestException();
@@ -83,9 +85,11 @@ export class UsersService {
 
   async deleteAll(id: string): Promise<boolean> {
     const deleteResult = await this.userModelRepository.delete({ id });
+
     if (deleteResult.affected === 0) {
       throw new BadRequestException();
     }
+
     return true;
   }
 }

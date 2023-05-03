@@ -1,11 +1,13 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { IsBoolean, IsEmail, IsNotEmpty, IsString } from 'class-validator';
 
 export class RegisterUserDto {
   @ApiProperty({
-    description: 'The name of the user',
+    description: 'The full name of the user',
     example: 'Andra Ilovan',
     required: true,
   })
+  @IsString()
   name: string;
 
   @ApiProperty({
@@ -13,6 +15,7 @@ export class RegisterUserDto {
     example: 'andrailovan@gmail.com',
     required: true,
   })
+  @IsEmail()
   email: string;
 
   @ApiProperty({
@@ -20,13 +23,16 @@ export class RegisterUserDto {
     example: 'pass_w0rd123',
     required: true,
   })
+  @IsNotEmpty()
   password: string;
 
   @ApiProperty({
-    description: 'A property that states whether the user is an admin or not',
+    description:
+      'A property that states whether the user has the administrator role or not',
     example: 'true/false',
     required: true,
   })
+  @IsBoolean()
   isAdmin: boolean;
 
   constructor(values: Partial<RegisterUserDto>) {
