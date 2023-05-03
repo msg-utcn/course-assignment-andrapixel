@@ -4,7 +4,7 @@ import { UpdateQuestionDto } from '../dtos/update-question.dto';
 import { QuestionDto } from '../dtos/question.dto';
 
 export class QuestionMapper {
-  static mapCreateQuestionToModel(dto: CreateQuestionDto): QuestionModel {
+  static mapCreateQuestionDtoToModel(dto: CreateQuestionDto): QuestionModel {
     return new QuestionModel({
       id: undefined,
       postedBy: undefined,
@@ -16,12 +16,11 @@ export class QuestionMapper {
     });
   }
 
-  static mapUpdateQuestionToModel(
+  static mapUpdateQuestionDtoToModel(
     dto: UpdateQuestionDto,
     oldModel: QuestionModel
   ): QuestionModel {
     return new QuestionModel({
-      //id: oldModel.id,
       ...oldModel,
       title: dto.title,
       content: dto.content,

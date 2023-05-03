@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/answer.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/answer.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-answer.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/update-answer.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/answer.mapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/answer.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/auth.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-payload.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-payload.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-token.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-token.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/guards/jwt-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/jwt-auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/guards/local-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/local-auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/strategies/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/strategies/jwt.strategy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/strategies/local.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/strategies/local.strategy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-question.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-question.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/question.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/question.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/update-question.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/update-question.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/question.mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/question.mapper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question.service.ts" afterDir="false" />
@@ -29,24 +24,27 @@
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/dto/register-user.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/register-user.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/dto/user.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/user.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/mappers/users.mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/mappers/users.mapper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/model/user-role.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/model/user-role.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/model/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/model/user.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week-3-assignment" />
+        <entry key="$PROJECT_DIR$" value="week-4.0" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,12 +73,15 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/home/alexandra/Projects/msg2/course-content/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/home/alexandra/Projects/msg2/course-content/node_modules/typescript/lib",
+    "ts.external.directory.path": "/home/alexandra/Projects/crying/course-assignment-andrapixel/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/api" />
     </key>
   </component>
@@ -105,6 +106,7 @@
       <workItem from="1682856708130" duration="1592000" />
       <workItem from="1682858655806" duration="616000" />
       <workItem from="1682859901346" duration="1141000" />
+      <workItem from="1683113490335" duration="5017000" />
     </task>
     <servers />
   </component>
