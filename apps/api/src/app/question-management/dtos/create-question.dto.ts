@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { QuestionTopic } from '../model/question-topic';
-import {IsEnum, IsString} from "class-validator";
+import { IsEnum, IsString } from 'class-validator';
 
 export class CreateQuestionDto {
   @ApiProperty({

@@ -1,5 +1,5 @@
-import {ApiProperty} from "@nestjs/swagger";
-import {IsInt, IsString, IsUUID, Max, Min} from "class-validator";
+import { ApiProperty } from '@nestjs/swagger';
+import { IsInt, IsString, IsUUID, Max, Min } from 'class-validator';
 
 export class AnswerDto {
   @ApiProperty({

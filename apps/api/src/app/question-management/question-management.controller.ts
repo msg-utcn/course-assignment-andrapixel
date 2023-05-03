@@ -5,7 +5,8 @@ import {
   Get,
   Param,
   Patch,
-  Post, Put,
+  Post,
+  Put,
   UseGuards,
 } from '@nestjs/common';
 import { QuestionService } from './question.service';
@@ -15,10 +16,10 @@ import { QuestionManagementConfig } from './question-management.config';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { QuestionDto } from './dtos/question.dto';
-import {AnswerService} from "./answer.service";
-import {AnswerDto} from "./dtos/answer.dto";
-import {UpdateAnswerDto} from "./dtos/update-answer.dto";
-import {CreateAnswerDto} from "./dtos/create-answer.dto";
+import { AnswerService } from './answer.service';
+import { AnswerDto } from './dtos/answer.dto';
+import { UpdateAnswerDto } from './dtos/update-answer.dto';
+import { CreateAnswerDto } from './dtos/create-answer.dto';
 
 @ApiBearerAuth()
 @UseGuards(JwtAuthGuard)
@@ -58,7 +59,6 @@ export class QuestionManagementController {
   async deleteQuestion(@Param('id') id: string): Promise<void> {
     return this.questionService.delete(id);
   }
-
 
   // Answers CRUD region
   /*@Get('/answers')

@@ -1,6 +1,6 @@
 import { QuestionTopic } from '../model/question-topic';
-import {ApiProperty} from "@nestjs/swagger";
-import {IsEnum, IsInt, IsString, IsUUID, Max, Min} from "class-validator";
+import { ApiProperty } from '@nestjs/swagger';
+import { IsEnum, IsInt, IsString, IsUUID, Max, Min } from 'class-validator';
 
 export class QuestionDto {
   @ApiProperty({

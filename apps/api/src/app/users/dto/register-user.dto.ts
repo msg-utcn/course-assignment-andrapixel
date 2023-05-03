@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import {IsBoolean, IsEmail, IsNotEmpty, IsString} from "class-validator";
+import { IsBoolean, IsEmail, IsNotEmpty, IsString } from 'class-validator';
 
 export class RegisterUserDto {
   @ApiProperty({
@@ -27,7 +27,8 @@ export class RegisterUserDto {
   password: string;
 
   @ApiProperty({
-    description: 'A property that states whether the user has the administrator role or not',
+    description:
+      'A property that states whether the user has the administrator role or not',
     example: 'true/false',
     required: true,
   })

@@ -1,11 +1,16 @@
-import {BadRequestException, Injectable, Logger, NotFoundException} from "@nestjs/common";
-import {InjectRepository} from "@nestjs/typeorm";
-import {AnswerModel} from "./model/answer.model";
-import {Repository} from "typeorm";
-import {AnswerDto} from "./dtos/answer.dto";
-import {CreateAnswerDto} from "./dtos/create-answer.dto";
-import {UpdateAnswerDto} from "./dtos/update-answer.dto";
-import {AnswerMapper} from "./mappers/answer.mapper";
+import {
+  BadRequestException,
+  Injectable,
+  Logger,
+  NotFoundException,
+} from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { AnswerModel } from './model/answer.model';
+import { Repository } from 'typeorm';
+import { AnswerDto } from './dtos/answer.dto';
+import { CreateAnswerDto } from './dtos/create-answer.dto';
+import { UpdateAnswerDto } from './dtos/update-answer.dto';
+import { AnswerMapper } from './mappers/answer.mapper';
 
 @Injectable()
 export class AnswerService {
