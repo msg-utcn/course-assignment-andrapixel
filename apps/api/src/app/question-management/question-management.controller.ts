@@ -20,9 +20,13 @@ import { AnswerService } from './answer.service';
 import { AnswerDto } from './dtos/answer.dto';
 import { UpdateAnswerDto } from './dtos/update-answer.dto';
 import { CreateAnswerDto } from './dtos/create-answer.dto';
+import { RolesGuard } from '../auth/guards/roles.guard';
+import { UserRole } from '../users/model/user-role';
+import { Roles } from '../auth/decorators/roles.decorator';
+import { UserModel } from '../users/model/user.model';
 
 @ApiBearerAuth()
-@UseGuards(JwtAuthGuard)
+@UseGuards(JwtAuthGuard, RolesGuard)
 @ApiTags(QuestionManagementConfig.SWAGGER_FEATURE)
 @Controller(QuestionManagementConfig.API_ROUTE)
 export class QuestionManagementController {
@@ -56,6 +60,7 @@ export class QuestionManagementController {
   }
 
   @Delete(':id')
+  //@Roles(UserRole.ADMIN)
   async deleteQuestion(@Param('id') id: string): Promise<void> {
     return this.questionService.delete(id);
   }
@@ -85,12 +90,13 @@ export class QuestionManagementController {
   }
 
   @Delete(':questionId/answers/:id')
+  //@Roles(UserRole.ADMIN)
   async deleteAnswer(@Param('id') id: string): Promise<void> {
     return this.answerService.delete(id);
   }
 
   /*
-  @Delete('/answers2/:id')
+  @Delete('/answers2')
   async deleteAllAnswers(): Promise<boolean> {
     return this.answerService.deleteAll();
   }*/

@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Fixed prettier">
+    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Got up to date with week 6 materials">
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/decorators/roles.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/roles.guard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/answer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/answer.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/answer.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/answer.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-answer.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-answer.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-question.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-question.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/question.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/question.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/answer.mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/answer.mapper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/question.mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/question.mapper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/model/answer.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/answer.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/model/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/model/user.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +104,7 @@
       <workItem from="1683113490335" duration="15944000" />
       <workItem from="1683142358063" duration="1478000" />
       <workItem from="1683166281136" duration="660000" />
-      <workItem from="1683167187549" duration="1803000" />
+      <workItem from="1683167187549" duration="6575000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed prettier">
       <created>1683121075822</created>
@@ -124,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683121075822</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Got up to date with week 6 materials">
+      <created>1683169389805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683169389805</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed prettier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed prettier" />
+    <MESSAGE value="Got up to date with week 6 materials" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got up to date with week 6 materials" />
   </component>
 </project>
