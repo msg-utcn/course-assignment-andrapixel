@@ -83,7 +83,7 @@ export class UsersService {
     return bcrypt.compare(loginUserDto.password, foundModel.password);
   }
 
-  async deleteAll(id: string): Promise<boolean> {
+  async delete(id: string): Promise<boolean> {
     const deleteResult = await this.userModelRepository.delete({ id });
 
     if (deleteResult.affected === 0) {

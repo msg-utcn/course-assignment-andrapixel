@@ -12,6 +12,12 @@ export class CreateQuestionDto {
   title: string;
 
   @ApiProperty({
+    description: 'The UUID of the author of the question',
+    required: true,
+  })
+  postedBy: string;
+
+  @ApiProperty({
     description: 'The content of the question',
     example: 'I am learning javascript and I got this error when trying to...',
     required: true,

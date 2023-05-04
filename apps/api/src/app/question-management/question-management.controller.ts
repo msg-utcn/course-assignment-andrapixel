@@ -61,17 +61,22 @@ export class QuestionManagementController {
   }
 
   // Answers CRUD region
-  /*@Get('/answers')
-  async getAllAnswers(): Promise<AnswerDto[]> {
-    return this.answerService.readAll();
-  }*/
-
-  @Post('/answers')
-  async createAnswer(@Body() dto: CreateAnswerDto): Promise<AnswerDto> {
-    return this.answerService.create(dto);
+  @Get(':questionId/answers')
+  async getAllAnswers(
+    @Param('questionId') questionId: string
+  ): Promise<AnswerDto[]> {
+    return this.answerService.readAllByQuestionId(questionId);
   }
 
-  @Put('/answers/:id')
+  @Post(':questionId/answers')
+  async createAnswer(
+    @Body() dto: CreateAnswerDto,
+    @Param('questionId') questionId: string
+  ): Promise<AnswerDto> {
+    return this.answerService.create(questionId, dto);
+  }
+
+  @Put(':questionId/answers/:id')
   async updateAnswer(
     @Param('id') id: string,
     @Body() dto: UpdateAnswerDto
@@ -79,8 +84,14 @@ export class QuestionManagementController {
     return this.answerService.update(id, dto);
   }
 
-  @Delete('/answers/:id')
+  @Delete(':questionId/answers/:id')
   async deleteAnswer(@Param('id') id: string): Promise<void> {
     return this.answerService.delete(id);
   }
+
+  /*
+  @Delete('/answers2/:id')
+  async deleteAllAnswers(): Promise<boolean> {
+    return this.answerService.deleteAll();
+  }*/
 }
