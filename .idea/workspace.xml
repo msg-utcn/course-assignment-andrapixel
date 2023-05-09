@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Got up to date with week 6 materials">
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/decorators/roles.decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/roles.guard.ts" afterDir="false" />
+    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Added optional assignment implementation: added authorization so that only admins can remove questions/answers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/guards/roles.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/roles.guard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/alexandra/Projects/msg2/course-content/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/alexandra/Projects/crying/course-assignment-andrapixel/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -104,7 +103,10 @@
       <workItem from="1683113490335" duration="15944000" />
       <workItem from="1683142358063" duration="1478000" />
       <workItem from="1683166281136" duration="660000" />
-      <workItem from="1683167187549" duration="6575000" />
+      <workItem from="1683167187549" duration="7927000" />
+      <workItem from="1683176555871" duration="167000" />
+      <workItem from="1683199643945" duration="6142000" />
+      <workItem from="1683617491075" duration="2307000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed prettier">
       <created>1683121075822</created>
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683169389805</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added optional assignment implementation: added authorization so that only admins can remove questions/answers">
+      <created>1683174306575</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683174306575</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +146,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="week-5-assignment" />
+                        <option value="week-6-assignment" />
                       </list>
                     </value>
                   </entry>
@@ -152,6 +161,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed prettier" />
     <MESSAGE value="Got up to date with week 6 materials" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got up to date with week 6 materials" />
+    <MESSAGE value="Added optional assignment implementation: added authorization so that only admins can remove questions/answers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added optional assignment implementation: added authorization so that only admins can remove questions/answers" />
   </component>
 </project>

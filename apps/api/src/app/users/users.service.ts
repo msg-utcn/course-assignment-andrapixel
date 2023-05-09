@@ -44,7 +44,7 @@ export class UsersService {
 
   async getUserByEmail(email: string): Promise<UserDto> {
     const foundModel = await this.userModelRepository.findOne({
-      where: { email: String(email) },
+      where: { email },
     });
 
     if (!foundModel) {

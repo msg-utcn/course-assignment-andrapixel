@@ -23,7 +23,6 @@ import { CreateAnswerDto } from './dtos/create-answer.dto';
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { UserRole } from '../users/model/user-role';
 import { Roles } from '../auth/decorators/roles.decorator';
-import { UserModel } from '../users/model/user.model';
 
 @ApiBearerAuth()
 @UseGuards(JwtAuthGuard, RolesGuard)
@@ -60,7 +59,7 @@ export class QuestionManagementController {
   }
 
   @Delete(':id')
-  //@Roles(UserRole.ADMIN)
+  @Roles(UserRole.ADMIN)
   async deleteQuestion(@Param('id') id: string): Promise<void> {
     return this.questionService.delete(id);
   }
@@ -90,7 +89,7 @@ export class QuestionManagementController {
   }
 
   @Delete(':questionId/answers/:id')
-  //@Roles(UserRole.ADMIN)
+  @Roles(UserRole.ADMIN)
   async deleteAnswer(@Param('id') id: string): Promise<void> {
     return this.answerService.delete(id);
   }
