@@ -93,10 +93,4 @@ export class QuestionManagementController {
   async deleteAnswer(@Param('id') id: string): Promise<void> {
     return this.answerService.delete(id);
   }
-
-  /*
-  @Delete('/answers2')
-  async deleteAllAnswers(): Promise<boolean> {
-    return this.answerService.deleteAll();
-  }*/
 }

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Added optional assignment implementation: added authorization so that only admins can remove questions/answers">
+    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Fixed authorization issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/guards/roles.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/roles.guard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,8 @@
       <workItem from="1683167187549" duration="7927000" />
       <workItem from="1683176555871" duration="167000" />
       <workItem from="1683199643945" duration="6142000" />
-      <workItem from="1683617491075" duration="2307000" />
+      <workItem from="1683617491075" duration="3250000" />
+      <workItem from="1683708214618" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed prettier">
       <created>1683121075822</created>
@@ -129,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683174306575</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed authorization issues">
+      <created>1683620636656</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683620636656</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +168,7 @@
     <MESSAGE value="Fixed prettier" />
     <MESSAGE value="Got up to date with week 6 materials" />
     <MESSAGE value="Added optional assignment implementation: added authorization so that only admins can remove questions/answers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added optional assignment implementation: added authorization so that only admins can remove questions/answers" />
+    <MESSAGE value="Fixed authorization issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed authorization issues" />
   </component>
 </project>
