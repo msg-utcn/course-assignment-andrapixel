@@ -20,10 +20,9 @@ export class QuestionDto {
   title: string;
 
   @ApiProperty({
-    description: 'The author of the question',
+    description: 'The UUID of the author of the question',
     required: true,
   })
-  @IsString()
   postedBy: string;
 
   @ApiProperty({

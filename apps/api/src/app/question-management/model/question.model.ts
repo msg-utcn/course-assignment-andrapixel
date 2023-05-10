@@ -1,5 +1,13 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  ManyToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 import { QuestionTopic } from './question-topic';
+import { AnswerModel } from './answer.model';
+import { UserModel } from '../../users/model/user.model';
 
 @Entity()
 export class QuestionModel {
@@ -9,8 +17,11 @@ export class QuestionModel {
   @Column({ nullable: false })
   title: string;
 
-  @Column({ nullable: true })
-  postedBy: string;
+  @ManyToOne(() => UserModel, (user) => user.questions, {
+    nullable: false,
+    cascade: true,
+  })
+  postedBy: UserModel;
 
   @Column({ nullable: false })
   content: string;
@@ -24,6 +35,9 @@ export class QuestionModel {
   @Column({ nullable: false })
   creationDate: string;
 
+  @OneToMany(() => AnswerModel, (answer) => answer.parent)
+  answers?: AnswerModel[];
+
   constructor(values: Partial<QuestionModel>) {
     if (values) {
       this.id = values.id;
@@ -33,6 +47,7 @@ export class QuestionModel {
       this.topic = values.topic;
       this.rating = values.rating;
       this.creationDate = values.creationDate;
+      this.answers = values.answers;
     }
   }
 }

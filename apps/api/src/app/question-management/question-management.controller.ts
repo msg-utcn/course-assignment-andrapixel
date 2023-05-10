@@ -20,9 +20,12 @@ import { AnswerService } from './answer.service';
 import { AnswerDto } from './dtos/answer.dto';
 import { UpdateAnswerDto } from './dtos/update-answer.dto';
 import { CreateAnswerDto } from './dtos/create-answer.dto';
+import { RolesGuard } from '../auth/guards/roles.guard';
+import { UserRole } from '../users/model/user-role';
+import { Roles } from '../auth/decorators/roles.decorator';
 
 @ApiBearerAuth()
-@UseGuards(JwtAuthGuard)
+@UseGuards(JwtAuthGuard, RolesGuard)
 @ApiTags(QuestionManagementConfig.SWAGGER_FEATURE)
 @Controller(QuestionManagementConfig.API_ROUTE)
 export class QuestionManagementController {
@@ -56,22 +59,28 @@ export class QuestionManagementController {
   }
 
   @Delete(':id')
+  @Roles(UserRole.ADMIN)
   async deleteQuestion(@Param('id') id: string): Promise<void> {
     return this.questionService.delete(id);
   }
 
   // Answers CRUD region
-  /*@Get('/answers')
-  async getAllAnswers(): Promise<AnswerDto[]> {
-    return this.answerService.readAll();
-  }*/
-
-  @Post('/answers')
-  async createAnswer(@Body() dto: CreateAnswerDto): Promise<AnswerDto> {
-    return this.answerService.create(dto);
+  @Get(':questionId/answers')
+  async getAllAnswers(
+    @Param('questionId') questionId: string
+  ): Promise<AnswerDto[]> {
+    return this.answerService.readAllByQuestionId(questionId);
   }
 
-  @Put('/answers/:id')
+  @Post(':questionId/answers')
+  async createAnswer(
+    @Body() dto: CreateAnswerDto,
+    @Param('questionId') questionId: string
+  ): Promise<AnswerDto> {
+    return this.answerService.create(questionId, dto);
+  }
+
+  @Put(':questionId/answers/:id')
   async updateAnswer(
     @Param('id') id: string,
     @Body() dto: UpdateAnswerDto
@@ -79,7 +88,8 @@ export class QuestionManagementController {
     return this.answerService.update(id, dto);
   }
 
-  @Delete('/answers/:id')
+  @Delete(':questionId/answers/:id')
+  @Roles(UserRole.ADMIN)
   async deleteAnswer(@Param('id') id: string): Promise<void> {
     return this.answerService.delete(id);
   }

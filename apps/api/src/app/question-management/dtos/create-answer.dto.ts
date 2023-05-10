@@ -9,4 +9,16 @@ export class CreateAnswerDto {
   })
   @IsString()
   content: string;
+
+  @ApiProperty({
+    description: 'The UUID of the question corresponding to the current answer',
+    required: true,
+  })
+  parentId: string;
+
+  @ApiProperty({
+    description: 'The UUID of the author(user) of the answer',
+    required: true,
+  })
+  postedBy: string;
 }

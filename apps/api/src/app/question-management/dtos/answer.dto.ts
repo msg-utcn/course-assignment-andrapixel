@@ -11,6 +11,18 @@ export class AnswerDto {
   id?: string;
 
   @ApiProperty({
+    description: 'The UUID of the question corresponding to the current answer',
+    required: true,
+  })
+  parentId: string;
+
+  @ApiProperty({
+    description: 'The UUID of the author(user) of the answer',
+    required: true,
+  })
+  postedBy: string;
+
+  @ApiProperty({
     description: 'The content of the answer',
     example: 'You can solve this by...',
     required: true,
@@ -37,6 +49,8 @@ export class AnswerDto {
   constructor(values: Partial<AnswerDto>) {
     if (values) {
       this.id = values.id;
+      this.parentId = values.parentId;
+      this.postedBy = values.postedBy;
       this.content = values.content;
       this.rating = values.rating;
       this.creationDate = values.creationDate;

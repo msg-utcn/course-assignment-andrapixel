@@ -5,9 +5,13 @@ import { QuestionModel } from './model/question.model';
 import { QuestionService } from './question.service';
 import { AnswerModel } from './model/answer.model';
 import { AnswerService } from './answer.service';
+import { UsersModule } from '../users/users.module';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([QuestionModel, AnswerModel])],
+  imports: [
+    TypeOrmModule.forFeature([QuestionModel, AnswerModel]),
+    UsersModule,
+  ],
   controllers: [QuestionManagementController],
   providers: [QuestionService, AnswerService],
 })

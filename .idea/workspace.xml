@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="">
+    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Fixed authorization issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +36,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week-4.0" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,30 +45,30 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2P0MbcyqQ1jSwaTal0ayyJ5dzoB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/alexandra/Projects/msg2/course-content/apps/api",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/alexandra/Projects/msg2/course-content/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/home/alexandra/Projects/crying/course-assignment-andrapixel/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alexandra/Projects/msg2/course-content/apps/api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/alexandra/Projects/msg2/course-content/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/alexandra/Projects/crying/course-assignment-andrapixel/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/api" />
@@ -97,8 +98,44 @@
       <workItem from="1682856708130" duration="1592000" />
       <workItem from="1682858655806" duration="616000" />
       <workItem from="1682859901346" duration="1141000" />
-      <workItem from="1683113490335" duration="7382000" />
+      <workItem from="1683113490335" duration="15944000" />
+      <workItem from="1683142358063" duration="1478000" />
+      <workItem from="1683166281136" duration="660000" />
+      <workItem from="1683167187549" duration="7927000" />
+      <workItem from="1683176555871" duration="167000" />
+      <workItem from="1683199643945" duration="6142000" />
+      <workItem from="1683617491075" duration="3250000" />
+      <workItem from="1683708214618" duration="27000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed prettier">
+      <created>1683121075822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683121075822</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Got up to date with week 6 materials">
+      <created>1683169389805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683169389805</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added optional assignment implementation: added authorization so that only admins can remove questions/answers">
+      <created>1683174306575</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683174306575</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed authorization issues">
+      <created>1683620636656</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683620636656</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +152,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="week-5-assignment" />
+                        <option value="week-6-assignment" />
                       </list>
                     </value>
                   </entry>
@@ -126,5 +163,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed prettier" />
+    <MESSAGE value="Got up to date with week 6 materials" />
+    <MESSAGE value="Added optional assignment implementation: added authorization so that only admins can remove questions/answers" />
+    <MESSAGE value="Fixed authorization issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed authorization issues" />
   </component>
 </project>
