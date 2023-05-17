@@ -4,7 +4,7 @@ import { UserDto } from '../dto/user.dto';
 import { UserRole } from '../model/user-role';
 
 export class UsersMapper {
-  static mapCreateUserToModel(dto: RegisterUserDto): UserModel {
+  static mapCreateUserDtoToModel(dto: RegisterUserDto): UserModel {
     const roles = [UserRole.USER];
     if (dto.isAdmin === true) {
       roles.push(UserRole.ADMIN);
@@ -19,7 +19,7 @@ export class UsersMapper {
     });
   }
 
-  static mapUserToDto(model: UserModel): UserDto {
+  static mapToDto(model: UserModel): UserDto {
     return new UserDto({
       id: model.id,
       name: model.name,

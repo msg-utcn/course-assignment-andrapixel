@@ -6,6 +6,7 @@ import {
   Param,
   Patch,
   Post,
+  Put,
   UseGuards,
 } from '@nestjs/common';
 import { QuestionService } from './question.service';
@@ -15,15 +16,25 @@ import { QuestionManagementConfig } from './question-management.config';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { QuestionDto } from './dtos/question.dto';
+import { AnswerService } from './answer.service';
+import { AnswerDto } from './dtos/answer.dto';
+import { UpdateAnswerDto } from './dtos/update-answer.dto';
+import { CreateAnswerDto } from './dtos/create-answer.dto';
+import { RolesGuard } from '../auth/guards/roles.guard';
+import { UserRole } from '../users/model/user-role';
+import { Roles } from '../auth/decorators/roles.decorator';
 
 @ApiBearerAuth()
-@UseGuards(JwtAuthGuard)
+@UseGuards(JwtAuthGuard, RolesGuard)
 @ApiTags(QuestionManagementConfig.SWAGGER_FEATURE)
 @Controller(QuestionManagementConfig.API_ROUTE)
 export class QuestionManagementController {
-  constructor(private questionService: QuestionService) {}
+  constructor(
+    private questionService: QuestionService,
+    private answerService: AnswerService
+  ) {}
 
-  @UseGuards(JwtAuthGuard)
+  // Questions CRUD region
   @Get()
   async getAllQuestions(): Promise<QuestionDto[]> {
     return this.questionService.readAll();
@@ -48,10 +59,38 @@ export class QuestionManagementController {
   }
 
   @Delete(':id')
-  async deleteQuestion(
-    @Param('id') id: string,
-    @Body() dto: UpdateQuestionDto
-  ): Promise<void> {
+  @Roles(UserRole.ADMIN)
+  async deleteQuestion(@Param('id') id: string): Promise<void> {
     return this.questionService.delete(id);
+  }
+
+  // Answers CRUD region
+  @Get(':questionId/answers')
+  async getAllAnswers(
+    @Param('questionId') questionId: string
+  ): Promise<AnswerDto[]> {
+    return this.answerService.readAllByQuestionId(questionId);
+  }
+
+  @Post(':questionId/answers')
+  async createAnswer(
+    @Body() dto: CreateAnswerDto,
+    @Param('questionId') questionId: string
+  ): Promise<AnswerDto> {
+    return this.answerService.create(questionId, dto);
+  }
+
+  @Put(':questionId/answers/:id')
+  async updateAnswer(
+    @Param('id') id: string,
+    @Body() dto: UpdateAnswerDto
+  ): Promise<AnswerDto> {
+    return this.answerService.update(id, dto);
+  }
+
+  @Delete(':questionId/answers/:id')
+  @Roles(UserRole.ADMIN)
+  async deleteAnswer(@Param('id') id: string): Promise<void> {
+    return this.answerService.delete(id);
   }
 }
