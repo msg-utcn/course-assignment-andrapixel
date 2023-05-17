@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Fixed authorization issues">
+    <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Created Angular application and added the login component">
+      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/authentication.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/data-models/authenticate.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/material.modules.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nx.json" beforeDir="false" afterPath="$PROJECT_DIR$/nx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +45,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="week-6-assignment" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,13 +86,39 @@
       <recent name="$PROJECT_DIR$/apps/api" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.serve:ui">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="serve:api" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve:api" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve:ui" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve:ui" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve:ui" />
+        <item itemvalue="npm.serve:api" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +140,10 @@
       <workItem from="1683176555871" duration="167000" />
       <workItem from="1683199643945" duration="6142000" />
       <workItem from="1683617491075" duration="3250000" />
-      <workItem from="1683708214618" duration="27000" />
+      <workItem from="1683708214618" duration="332000" />
+      <workItem from="1683810471108" duration="7084000" />
+      <workItem from="1684252477629" duration="3199000" />
+      <workItem from="1684325398050" duration="2227000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed prettier">
       <created>1683121075822</created>
@@ -135,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683620636656</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Removed commented code">
+      <created>1683708300435</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683708300435</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +214,8 @@
     <MESSAGE value="Got up to date with week 6 materials" />
     <MESSAGE value="Added optional assignment implementation: added authorization so that only admins can remove questions/answers" />
     <MESSAGE value="Fixed authorization issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed authorization issues" />
+    <MESSAGE value="Removed commented code" />
+    <MESSAGE value="Created Angular application and added the login component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Angular application and added the login component" />
   </component>
 </project>
