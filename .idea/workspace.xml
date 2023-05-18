@@ -5,77 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c62459e-8e9f-438a-b62c-52eef699c849" name="Changes" comment="Created project backup, created Angular application and added the login component">
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/decorators/roles.decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/auth/guards/roles.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/answer.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/answer.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-answer.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/update-answer.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/answer.mapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/answer.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/cypress.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/src/e2e/app.cy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/src/fixtures/example.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/src/support/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/src/support/commands.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/src/support/e2e.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui-e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/jest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/app.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/authentication.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/containers/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/containers/login/login.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/containers/login/login.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/containers/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/data-models/authenticate.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/material.modules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/presentational/login-form/login-form.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/presentational/login-form/login-form.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/presentational/login-form/login-form.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/presentational/login-form/login-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/services/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/src/test-setup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/tsconfig.editor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/ui/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/data-models/register.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/ui/src/app/services/register.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-payload.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/auth/dto/jwt-payload.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-question.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/create-question.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/question.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/question.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/update-question.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/dtos/update-question.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/question.mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/mappers/question.mapper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/model/question.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question-management.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/question-management/question.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/question-management/question.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/dto/login-user.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/login-user.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/dto/register-user.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/register-user.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/dto/user.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/dto/user.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/mappers/users.mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/mappers/users.mapper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/model/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/model/user.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app/users/users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nx.json" beforeDir="false" afterPath="$PROJECT_DIR$/nx.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ui/src/app/authentication.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ui/src/app/authentication.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ui/src/app/presentational/login-form/login-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ui/src/app/presentational/login-form/login-form.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,8 +97,16 @@
       <workItem from="1683176558438" duration="149000" />
       <workItem from="1684354803934" duration="862000" />
       <workItem from="1684358796157" duration="60000" />
-      <workItem from="1684359277721" duration="3459000" />
+      <workItem from="1684359277721" duration="7907000" />
     </task>
+    <task id="LOCAL-00001" summary="Created project backup, created Angular application and added the login component">
+      <created>1684363047537</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684363047537</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
