@@ -9,6 +9,7 @@ import { MaterialModule } from './material.modules';
 
 export const authRoutes: Route[] = [
   { path: 'login', component: LoginComponent },
+  //{ path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({
