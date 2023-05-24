@@ -10,10 +10,6 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class LoginFormComponent implements DoCheck {
   @Output() submit = new EventEmitter<AuthenticateModel>();
 
-  /*login(authenticate: AuthenticateModel): void {
-    this.submit.emit(authenticate);
-  }*/
-
   ngDoCheck() {
     console.log('login form check!');
   }

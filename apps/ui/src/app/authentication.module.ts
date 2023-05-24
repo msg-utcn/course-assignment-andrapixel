@@ -6,10 +6,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material.modules';
+import { RegisterComponent } from './containers/register/register.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { RegisterFormComponent } from './presentational/register-form/register-form.component';
 
 export const authRoutes: Route[] = [
   { path: 'login', component: LoginComponent },
-  //{ path: 'register', component: RegisterComponent },
+  { path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({
@@ -19,8 +22,14 @@ export const authRoutes: Route[] = [
     HttpClientModule,
     MaterialModule,
     ReactiveFormsModule,
+    MatCheckboxModule,
   ],
-  declarations: [LoginComponent, LoginFormComponent],
+  declarations: [
+    LoginComponent,
+    LoginFormComponent,
+    RegisterComponent,
+    RegisterFormComponent,
+  ],
   providers: [],
 })
 export class AuthenticationModule {}
