@@ -18,6 +18,7 @@ async function bootstrap() {
   const version = '1.0';
   app.setGlobalPrefix(globalPrefix);
   app.useGlobalPipes(new ValidationPipe());
+  app.enableCors();
 
   const config = new DocumentBuilder()
     .setTitle('StackUnderflow API')
